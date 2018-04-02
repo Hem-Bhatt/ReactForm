@@ -1,20 +1,40 @@
 import React, { Component } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import { Sticky } from './components/sticky.js';
+import { Sticky } from './components/Sticky.js';
+// import {Search} from 'react-icons/lib/fa/search';
+import {FaSearch} from 'react-icons/lib/fa'
 import './App.css';
 import 'react-tabs/style/react-tabs.css';
-//import JSON DATA!!!
+
+import axios from 'axios';
+
+
+
+//import JSON DATA to autopopulate the form!!!!
+const data= {};
 
 class App extends Component {
   constructor(props){
     super(props)
-    console.log("Working");
+    this.state= this.props;
   }
+
+
+
+
 
   componentDidMount (){
-    // Add your scripts here
-
+    // Fetching the Axios Data!???
+    //add icon between the buttons
   }
+
+
+ static defaultProps = {
+       width:600,
+       height:300,
+       data: data,
+  };
+
 
   render() {
     return (
@@ -22,16 +42,16 @@ class App extends Component {
     <div className="form_container">
       <Sticky className="sticky-one" exit="300">
         <div id="navbar">
-          <div id="navHead">IT Application Catalog - UFED</div>
+          <div id="navHead">IT Application Catalog - UFED
+            <input type="text" className="round" id="searchTerm" placeholder="Search" style={{marginLeft:550+'px'}}/>
+          <button>
+              <FaSearch />
+          </button>
+          </div>
         </div>
       </Sticky>
 
-
-
-
-
       <form>
-
         <div className="sides">
           <div className="left sides">
             <div className="form_element sides">

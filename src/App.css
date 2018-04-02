@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -39,11 +42,12 @@ form{
 
 }
 #navHead{
-  padding-top:10px;
+  padding-top:5.3px;
   padding-left: 13px;
   font-size: 13px;
   font-weight: bold;
   text-align: left;
+
 }
 
 
@@ -256,4 +260,18 @@ button:hover {
     border-radius: 0;
     margin: 0;
   }
+}
+
+#searchTerm{
+  width: 150px;
+  position: relative;
+  text-indent: 25px;
+  height: 25px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+
+svg{
+  padding-left: 2px;
 }
